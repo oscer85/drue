@@ -3,9 +3,11 @@ import React from 'react';
 const AboutSection = (props) => {
     return (
 
-        <section class="about">
-            <p>TEXT ABOUT</p>
-        </section>
+        <
+        section className = "about-section" >
+        <
+        p > TEXT ABOUT < /p> <
+        /section>
 
     );
 }
