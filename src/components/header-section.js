@@ -2,9 +2,6 @@ import React from 'react';
 import Drue from '../img/drue.png'
 import Arrow from '../img/arrow.png'
 
-
-
-
 const HeaderSection = (props) => {
 
     function ArrowClick() {
@@ -27,6 +24,7 @@ const HeaderSection = (props) => {
             const logo = document.querySelector(".logo");
             const entry = entries[0];
             console.log(entry.intersectionRatio);
+
             if (!entry.isIntersecting) {
                 logo.classList.add("logo-fixed");
             } else {
@@ -37,36 +35,18 @@ const HeaderSection = (props) => {
         observer.observe(header);
 
     }
-    return ( <
-        div >
-        <
-        section className = "header" >
-        <
-        header >
-        <
-        div className = "logo-wrapper" >
-        <
-        img src = {
-            Drue
-        }
-        alt = "Drue"
-        className = "logo" / >
-        <
-        /div> <
-        div className = "arrow"
-        onClick = {
-            ArrowClick
-        } >
-        <
-        img src = {
-            Arrow
-        }
-        alt = "arrow" / >
-        <
-        /div> <
-        /header> <
-        /section> <
-        /div>
+    return (<div >
+        <section className="header" >
+            <header >
+                <div className="logo-wrapper" >
+                    <img src={Drue} alt="Drue" className="logo" />
+                </div>
+                <div className="arrow" onClick={ArrowClick} >
+                    <img src={Arrow} alt="arrow" />
+                </div>
+            </header>
+        </section>
+    </div>
 
     );
 }

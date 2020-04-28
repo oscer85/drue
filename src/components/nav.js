@@ -1,22 +1,20 @@
+
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 
 const Nav = (props) => {
     return (
         <nav>
             <ul className="nav-links">
-
-                <li><a href="/" className="menu-link">about</a></li>
-                <li><a href="/" className="menu-link">commercial</a></li>
-                <li><a href="/" className="menu-link">druÉ design</a></li>
-                <li><a href="/" className="menu-link">logo concept</a></li>
-                <li><a href="/" className="menu-link">press</a></li>
-            </ul>
-        </nav>
+                <Link to="/about" ><li className="menu-link">about</li></Link>
+                <Link to="/commercial" ><li className="menu-link">commercial</li></Link>
+                <Link to="/designe" ><li className="menu-link">druÉ design</li></Link >
+                <Link to="/logo-concept" ><li className="menu-link">logo concept</li></Link>
+                <Link to="/press" ><li className="menu-link">press</li></Link>
+            </ul >
+        </nav >
     );
 }
 
 export default Nav;
-
-
-//jak stylizowac linki bez anchor tag
